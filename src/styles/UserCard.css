@@ -1,0 +1,75 @@
+/* =====================================
+   SOMMAIRE - UserCard.css
+   =====================================
+   1. Carte utilisateur
+   2. Informations utilisateur
+   3. Checkbox
+   4. Avatar
+   5. Bouton profil
+   ==================================== */
+
+/* ================================
+   1. Carte utilisateur
+   =============================== */
+.user-card {
+  background-color: #d5d5d5;
+  border-radius: 8px;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+
+/* ================================
+   2. Informations utilisateur
+   =============================== */
+.user-card .card-info {
+  width: 100%;
+  text-align: center;
+}
+
+.user-card .card-info span,
+.user-card .card-info strong {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ================================
+   3. Checkbox
+   =============================== */
+.user-card .checkbox {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.user-card .checkbox:checked::after {
+  left: 2px;
+}
+
+/* ================================
+   4. Avatar
+   =============================== */
+.card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* ================================
+   5. Bouton profil
+   =============================== */
+.card-button {
+  background-color: #00a1ff;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 10px;
+}

@@ -1,0 +1,33 @@
+/* =====================================
+   SOMMAIRE - SearchInput.css
+   =====================================
+   1. Style de base du champ
+   2. État focus
+   ==================================== */
+
+/* ================================
+   1. Style de base du champ
+   =============================== */
+.search-input {
+  background-color: #d5d5d5;
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-weight: 500;
+  font-size: 25px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* ================================
+   2. État focus
+   =============================== */
+.search-input:focus {
+  outline: none;      
+  box-shadow: none; 
+}

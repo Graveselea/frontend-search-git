@@ -1,0 +1,101 @@
+/* =====================================
+   SOMMAIRE - App.css (global styles)
+   =====================================
+   1. Layout général
+   2. En-tête (Header)
+   3. Zones principales
+   4. Typographie
+   5. Styles globaux checkbox
+   ==================================== */
+
+/* ================================
+   1. Layout général
+   =============================== */
+.App {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  color: black;
+}
+
+/* ================================
+   2. En-tête (Header)
+   =============================== */
+.App-header {
+  background-color: #888;
+  padding: 10px;
+  text-align: center;
+  height: 54px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+/* ================================
+   3. Zones principales
+   =============================== */
+main {
+  padding: 20px;
+  color: black;
+}
+
+/* ================================
+   4. Typographie
+   =============================== */
+body,
+input,
+button,
+span,
+strong,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* ================================
+   5. Styles globaux checkbox
+   =============================== */
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.checkbox:checked {
+  background-color: #00a1ff;
+  border-color: black;
+  min-width: 20px;
+}
+
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 129px;
+  width: 9px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
