@@ -64,10 +64,11 @@ Ajout d’un Personal Access Token dans .env.local et en-tête Authorization: to
 
 # Résultat final
 
-- **Recherche instantanée : live search dès 2 caractères, avec debounce et annulation propre**
-- **Grille responsive : 4 cartes par ligne sur desktop, auto-fill sur mobile**
+- **Recherche instantanée** : live search dès 2 caractères, avec debounce et annulation propre.
+- **Grille responsive** : 4 cartes par ligne sur desktop, auto-fill sur mobile.
 - **Mode édition :**
 Toggle clair “Enter/Exit Edit Mode”.
 Checkbox “Select All / Deselect All” avec compteur singulier/pluriel.
 Actions front-end : duplication et suppression.
-- **UX fluide : pas de scintillement, pas de requêtes obsolètes, gestion de la rate-limit**
+- **UX fluide** : pas de scintillement, pas de requêtes obsolètes, gestion de la rate-limit.
+
