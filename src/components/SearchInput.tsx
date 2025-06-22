@@ -30,7 +30,7 @@ const SearchInput: React.FC<Props> = ({ onResults }) => {
       };
 
       fetch(
-        `https://api.github.com/search/users?q=${encodeURIComponent(input)}`,
+        `https://api.github.com/search/users?q=${encodeURIComponent(input)}&per_page=100`,
         opts
       )
         .then(async (res) => {

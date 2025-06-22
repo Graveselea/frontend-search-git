@@ -38,7 +38,7 @@
   Cause : le nom `Frontend` comportait une majuscule, ce qui viole les restrictions npm.  
   Solution : créer le projet avec un nom valide sans majuscule.
 
-  - **Boucle infinie / Maximum update depth exceeded**  
+- **Boucle infinie / Maximum update depth exceeded**  
   Cause : on faisait un `setState` (pour l’`AbortController`) dans un `useEffect` dont dépendait ce même state.  
   Solution : passer l’`AbortController` dans une `useRef` (qui ne déclenche pas de rerender) et retirer tout `setState` de cet effet.
 
@@ -61,6 +61,9 @@ pour casser le texte à la ligne.
 
 - **Erreur 403 Rate Limit**
 Ajout d’un Personal Access Token dans .env.local et en-tête Authorization: token <TOKEN>.
+
+- **La gestion des functions toute dans APP**
+J'ai du mal avec l'idée que toute les functions soient dans `App.tsx`.
 
 # Résultat final
 
